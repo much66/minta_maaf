@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ungkapan Hati Untukmu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .paper {
+            background-color: #fffbf0; /* Warna kertas agak krem */
+            width: 100%;
+            max-width: 600px;
+            /* Mengubah padding kiri menjadi 70px agar teks menjauh dari garis */
+            padding: 40px 40px 40px 70px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            position: relative;
+            background-image: linear-gradient(#e6e6e6 1px, transparent 1px);
+            background-size: 100% 36px; /* Garis buku tulis */
+            line-height: 36px; /* Menyesuaikan garis */
+        }
+
+        .paper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px; /* Posisi garis tetap di 40px dari kiri */
+            height: 100%;
+            width: 2px;
+            background-color: #ffcccc; /* Garis tepi merah tipis ala buku */
+        }
+
+        /* Container untuk ilustrasi */
+        .illustration-container {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-right: 30px; /* Kompensasi padding kiri paper */
+            opacity: 0.8;
+        }
+
+        /* Styling SVG agar terlihat seperti sketsa pensil */
+        .sketch-svg {
+            width: 120px;
+            height: 120px;
+            fill: none;
+            stroke: #555;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.05));
+        }
+
+        .mood-text {
+            font-family: 'Caveat', cursive;
+            font-size: 18px;
+            color: #666;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #4a4a4a;
+            margin-bottom: 36px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 36px; /* Spasi antar paragraf */
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: rgba(255, 255, 0, 0.2); /* Highlight kuning tipis */
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+
+        .signature {
+            margin-top: 50px;
+            text-align: right;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 480px) {
+            .paper {
+                /* Padding kiri disesuaikan untuk layar kecil tapi tetap aman dari garis */
+                padding: 20px 20px 20px 60px; 
+                font-size: 14px;
+                background-size: 100% 30px;
+                line-height: 30px;
+            }
+            
+            p {
+                margin-bottom: 30px;
+            }
+            
+            .paper::before {
+                left: 30px;
+            }
+
+            .illustration-container {
+                padding-right: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="paper">
+        <!-- Ilustrasi Hati yang Diperban (Simbol ingin memperbaiki hubungan) -->
+        <div class="illustration-container">
+            <svg class="sketch-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bentuk Hati -->
+                <path d="M50 85 C20 65 5 50 5 35 C5 20 20 10 35 10 C45 10 50 20 50 20 C50 20 55 10 65 10 C80 10 95 20 95 35 C95 50 80 65 50 85 Z" stroke="#d65a5a" stroke-width="2" />
+                <!-- Perban 1 -->
+                <path d="M30 40 L50 20" stroke="#555" stroke-dasharray="2,2"/>
+                <path d="M25 45 L55 15" stroke="#555" stroke-dasharray="2,2"/>
+                <!-- Perban Silang -->
+                <path d="M60 50 L80 30" stroke="#555" />
+                <path d="M80 50 L60 30" stroke="#555" />
+                <!-- Plester Kecil -->
+                <rect x="35" y="55" width="20" height="10" rx="2" fill="none" stroke="#555" transform="rotate(-15 45 60)" />
+                <path d="M40 58 L50 63" stroke="#555" transform="rotate(-15 45 60)" />
+            </svg>
+            <span class="mood-text">Aku cuma ingin kita baik-baik saja...</span>
+        </div>
+
+        <h1>Maaf, tolong dibaca sebentar...</h1>
+
+        <p>
+            Maaf ya kalau 3-4 hari ini aku diem dan gak ngabarin. Jujur, aku bingung harus ngomong apa dan merasa buntu banget. Aku butuh waktu buat nenangin diri karena rasanya kepalaku mau pecah. Aku tau kamu marah besar soal laptop dan cara aku nyelesain masalah bibi, dan aku ngerti kenapa kamu kesel karena merasa aku gak dengerin saran kamu.
+        </p>
+
+        <p>
+            Aku tau kamu marah banget karena ngerasa aku gak mau dengerin saran kamu buat lapor polisi, atau buat tegas kayak jambak dan nyeret bibi. Tapi tolong pahami pertimbangan aku. <strong>Soal lapor polisi</strong>, jujur aku takut karena pasti bakal keluar uang lebih banyak lagi. Terus aku juga mikir, kalau jadi kasus hukum, <em>laptopnya pasti bakal disita jadi barang bukti</em> dalam waktu lama, dan otomatis gak bisa aku pake buat kerja atau gak bisa balik ke kamu cepet.
+        </p>
+
+        <p>
+            Terus soal tindakan fisik yang kamu minta, tolong dengerin ini baik-baik. Alasannya bukan karena aku nyepelein kamu, tapi karena <strong>aku sebenernya orangnya penakut, bukan pemberani kayak yang kamu harapin</strong>. Ada trauma masa lalu yang ngebentuk aku jadi kayak gini. Dari SD aku udah jadi korban bully, dan itu berlanjut sampe SMP. Aku selalu berusaha ngehindarin berantem, bahkan sampe sering pura-pura sakit biar nggak usah ke sekolah karena saking takutnya ngadepin orang jahat. Rasa takut itu masih ada sampe sekarang. <strong>Jadi pas kamu minta aku kasar, jujur aku bingung banget harus gimana. Aku terjebak antara pengen nurutin kemauan kamu, tapi di sisi lain itu bertentangan sama prinsip diri aku sendiri yang gak berani kekerasan. Kebingungan itu yang bikin aku jadi ngalihin ke yang lain, makanya aku malah minta pendapat kakakku, atau malah jadi nambahin Ayin di telepon kayak yang kamu tau.</strong>
+        </p>
+
+        <p>
+            Mungkin di mata kamu aku ini cowok dewasa, badannya gede, dan keliatan bisa diandelin. Tapi mungkin yang kamu belum tau, aslinya aku serapuh itu. Banyak hal yang aku lakuin di luar kebiasaanku itu sebenernya cuma modal 'nekat' aja, bukan karena aku berani. <span class="highlight">Ini juga alesannya kenapa jaman SMP-SMA aku gak pernah lanjut ikut ekstrakurikuler. Aku sempet ikut, tapi aku gak pernah ikut proses pelantikan karena aku takut dites ini-itu, takut ketemu orang, dan takut situasi di luar kendali.</span> Jujur, aku sebenernya benci fase dewasa yang penuh masalah gini. Nyamannya aku itu cuma diem sendiri di rumah. Dulu pun kalau aku main keluar sama temen, rasanya kayak lagi memaksakan diri aja supaya aku punya temen yang bisa dimintain tolong kalau aku butuh bantuan. Kalau aku bisa ngelakuin semuanya sendiri, aku lebih baik sendiri aja karena itu kenyamananku.
+        </p>
+
+        <p>
+            Aku juga minta maaf soal aku yang kesannya nunda-nunda ngasih kabar, <strong>terutama soal hari Minggu waktu bibi katanya mau ke rumah temennya tapi gak jadi.</strong> Aku sadar aku salah karena gak langsung ngasih tau kamu sampe kamu yang nanya duluan. Tapi jujur, aku nunda dan ngehindarin topik itu—bahkan pas kita ketemu—karena aku udah takut duluan. Setiap kita bahas soal bibi, aku selalu ngerasa dipojokkan dan disalahin. Rasanya gak nyaman banget, makanya aku refleks menghindar biar gak dimarahin lagi.
+        </p>
+
+        <p>
+            Soal viralin di sosmed pun sama, aku bingung harus gimana. Jujur, aku lebih berharap kamu langsung intruksiin aja langkah-langkahnya harus gimana, aku pasti bakal nurut kok. Kalau kamu bantu arahin aku pelan-pelan, itu jauh lebih ngebantu daripada cuma marah.
+        </p>
+
+        <p>
+            Terus soal aku matiin telepon waktu itu. Kamu bilang aku gak menghargai kamu, tapi tolong liat dari sisi aku. Aku kerja dari jam 7 pagi sampe 10 malem, fisik capek, laper. Tapi pas sampe rumah, yang aku denger cuma amarah kamu yang gak abis-abis dan terus mojokin aku. Di situ aku ngerasa justru aku yang gak dihargai.
+        </p>
+
+        <p>
+            Kamu bilang kamu keras biar aku 'jera'. Tapi yang aku rasain, bukannya aku jadi jera buat gak ngelakuin kesalahan, tapi malah jadi gak nyaman buat ngomongin masalah sama kamu. Aku jadi takut cerita karena ujungnya pasti disalahin. Kalau kamu emang selalu seperti itu, aku gatau harus gimana, aku gak pinter jelasin alasanku secara terstruktur, tapi aku gak ada niat ngerugiin kamu.
+        </p>
+
+        <p>
+            <span class="highlight">Kalau aku sama kamu setiap ada masalah dimarahin dan dipojokin terus, jujur aku lebih baik sendiri aja menghadapi masalahku.</span> Seenggaknya kalau sendiri, aku gak khawatir ada yang mojokin atau nyalahin atas keputusan yang aku ambil. Keputusan yang aku ambil itu kan berdasarkan apa yang aku pikirin dan semampu yang bisa aku lakuin. <strong>Buat aku, gapapa aku kehilangan uang berjuta-juta pun, yang penting hidup aku masih nyaman dan tenang.</strong> Aku serius, aku gak suka kamu ngomongnya nada tinggi begitu. Sudah cukup dulu aku dimarahin mamaku atas kesalahan yang aku pun gak mau ngelakuinnya, tapi terjadi cuma karena aku gak berani. Padahal kalau kamu lembut, aku pasti luluh. Aku harap kamu ngerti kenapa aku kayak gini.
+        </p>
+
+        <div class="signature">
+            Salam sayang,<br>
+            Aku
+        </div>
+    </div>
+
+</body>
+</html>
